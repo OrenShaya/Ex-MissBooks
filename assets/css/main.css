@@ -3,7 +3,7 @@
 @import url('./books-edit.css');
 @import url('./books-filter.css');
 @import url('./app-header.css');
-@import url('./about-us.css');
+@import url('./about.css');
 @import url('./home-page.css');
 
 * {
@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #efefef;
+  background-color: beige;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }

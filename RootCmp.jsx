@@ -10,18 +10,13 @@ export function App() {
     return (
         <Router>
             <section className="app">
-                <header>
-                    <AppHeader/>
-                </header>
-                <main>
+                <AppHeader />
+                <main className="main-layout">
                     <Routes>
-                        <Route path="/" element={<HomePage/>}/>
-                        <Route path="/book" element={<BookIndex/>}/>
-                        <Route path="/about" element={<About/>}/>
+                        <Route path="/" element={<HomePage />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/book" element={<BookIndex />} />
                     </Routes>
-                    {/* <HomePage /> */}
-                    {/* <AboutUs /> */}
-                    {/* <BookIndex /> */}
                 </main>
             </section>
         </Router>

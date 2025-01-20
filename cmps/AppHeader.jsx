@@ -1,14 +1,15 @@
+const { Link, NavLink } = ReactRouterDOM
 
 export function AppHeader() {
   return (
     <section className='app-header'>
-      <div className='logo' onClick={() => { /* do a routing function here */ }}>
+      <NavLink to="/" className='logo'>
         Miss Book
-      </div>
+      </NavLink>
       <nav className='nav-bar'>
-        <a href='#' onClick={() => { /* do a routing function here */ }}>
+        <NavLink to='/#/'>
           Home
-        </a>
+        </NavLink>
         <a href='#' onClick={() => { /* do a routing function here */ }}>
           Books
         </a>

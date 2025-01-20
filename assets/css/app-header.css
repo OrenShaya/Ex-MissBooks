@@ -16,7 +16,7 @@
     color: rgb(172, 255, 227);
     font-size: 1.5rem;
     font-weight: bold;
-
+    
 }
 
 .nav-bar>*:hover {
@@ -24,7 +24,9 @@
 }
 
 .logo {
+    text-decoration: none;
     font-size: 2rem;
     font-weight: 600;
     cursor: pointer;
+    color: rgb(172, 255, 227);
 }
