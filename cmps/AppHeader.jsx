@@ -10,12 +10,12 @@ export function AppHeader() {
         <NavLink to='/#/'>
           Home
         </NavLink>
-        <a href='#' onClick={() => { /* do a routing function here */ }}>
+        <NavLink to="/book">
           Books
-        </a>
-        <a href='#' onClick={() => { /* do a routing function here */ }}        >
+        </NavLink>
+        <NavLink to="/about">
           About
-        </a>
+        </NavLink>
       </nav>
     </section>
   )
