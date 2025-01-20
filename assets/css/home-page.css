@@ -1,0 +1,13 @@
+.home-page{
+    text-align: center;
+    background-color: beige;
+    color: rgb(102, 155, 137);
+    height: 92.5vh;
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    flex-direction: column;
+}
+.spaning{
+    padding: 1rem;
+}

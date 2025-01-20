@@ -1,0 +1,30 @@
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: cadetblue;
+    color: antiquewhite;
+}
+
+.nav-bar>*:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.nav-bar>* {
+    text-decoration: none;
+    color: rgb(172, 255, 227);
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.nav-bar>*:hover {
+    color: rgb(7, 3, 230);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
