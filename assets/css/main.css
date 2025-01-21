@@ -6,6 +6,7 @@
 @import url('./about.css');
 @import url('./home-page.css');
 @import url('./stats.css');
+@import url('./dynamic-rating.css');
 
 * {
   box-sizing: border-box;

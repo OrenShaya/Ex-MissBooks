@@ -114,6 +114,10 @@
   content: '!! :)';
 }
 
+.actions-btns {
+  margin: 1rem;
+}
+
 .go-back-btn {
   cursor: pointer;
   background-color: lightsalmon;

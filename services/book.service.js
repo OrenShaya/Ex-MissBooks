@@ -80,7 +80,6 @@ function _createBooks() {
         console.log(books)        
         utilService.saveToStorage(BOOKS_KEY, books)
       })
-    // const ctgs = ['Love', 'Fiction', 'Poetry', 'Cyber-Punk', 'Religion']
   }
 }
 

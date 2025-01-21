@@ -1,3 +1,4 @@
+import { DynamicRating } from "../cmps/DynamicRating.jsx"
 import { LongTxt } from "../cmps/LongTxt.jsx"
 import { bookService } from "../services/book.service.js"
 
@@ -118,16 +119,17 @@ export function BookDetails({ bookId, onGoBack }) {
                             Buy it now!
                         </button>
                     )}
-                    <div className="actions-btns">
-                        <button className="go-back-btn" onClick={onGoBack}>
-                            ⬅ Go back
-                        </button>
-                    </div>
                 </div>
 
                 <div className="book-details-info-row">
                     <span className="book-details-info-title">Description:</span>
                     <LongTxt txt={description} />
+                </div>
+                <div className="actions-btns">
+                        <button className="go-back-btn" onClick={onGoBack}>
+                            ⬅ Go back
+                        </button>
+                        <DynamicRating/>
                 </div>
             </div>
         </section>
