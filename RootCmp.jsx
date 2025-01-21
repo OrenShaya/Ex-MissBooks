@@ -5,6 +5,7 @@ import { AppHeader } from "./cmps/AppHeader.jsx"
 import { About } from "./pages/About.jsx"
 import { BookIndex } from "./pages/BookIndex.jsx"
 import { HomePage } from "./pages/Home.jsx"
+import { Stats } from "./pages/Stats.jsx"
 
 export function App() {
     return (
@@ -13,9 +14,10 @@ export function App() {
                 <AppHeader />
                 <main className="main-layout">
                     <Routes>
-                        <Route path="/" element={<HomePage />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/book" element={<BookIndex />} />
+                        <Route path="/" element={<HomePage/>} />
+                        <Route path="/about" element={<About/>} />
+                        <Route path="/book" element={<BookIndex/>} />
+                        <Route path="/stats" element={<Stats/>} />
                     </Routes>
                 </main>
             </section>

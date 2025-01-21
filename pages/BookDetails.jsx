@@ -13,7 +13,6 @@ export function BookDetails({ bookId, onGoBack }) {
     function loadBook() {
         bookService.get(bookId)
             .then(setBook)
-            // .then(book => setBook(book))
             .catch(err => {
                 console.log('err:', err)
             })

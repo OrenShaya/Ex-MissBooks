@@ -16,13 +16,15 @@ export const bookService = {
 function query(filterBy) {
   return storageService.query(BOOKS_KEY)
     .then((books) => {
-      if (filterBy.title) {
-        const regExp = new RegExp(filterBy.title, 'i')
-        books = books.filter((b) => regExp.test(b.title))
-      }
-      if (filterBy.price) {
-        books = books.filter((b) => b.listPrice.amount <= filterBy.price)
-      }
+      if (filterBy) {
+        if (filterBy.title) {
+          const regExp = new RegExp(filterBy.title, 'i')
+          books = books.filter((b) => regExp.test(b.title))
+        }
+        if (filterBy.price) {
+          books = books.filter((b) => b.listPrice.amount <= filterBy.price)
+        }
+    }
       return books
     })
 }

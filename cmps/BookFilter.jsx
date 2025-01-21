@@ -1,11 +1,31 @@
+import { bookService } from "../services/book.service.js"
+
 const { useState, useEffect } = React
+const { Link, useSearchParams } = ReactRouterDOM
 
 export function BookFilter({ filterBy, onSetFilter }) {
   const [filterByToEdit, setFilterByToEdit] = useState(filterBy)
+  const [searchParams, setSearchParams] = useSearchParams()
 
   useEffect(() => {
-    onSetFilter(filterByToEdit)
+    const newFilter = {}
+    for (const key in filterByToEdit) {
+      const value = filterByToEdit[key]
+      if (filterByToEdit[key]) newFilter[key] = value
+    }
+    setSearchParams(newFilter)
+    loadBooks(filterByToEdit)
   }, [filterByToEdit])
+
+  function loadBooks(filter) {
+    bookService.query(filter)
+        .then(() => {
+            onSetFilter(filter)
+        })
+        .catch(err => {
+            console.log('Problems finding books \n', err)
+        })
+  }
 
   function handleChange({ target }) {
     let { name: field, value, type } = target
